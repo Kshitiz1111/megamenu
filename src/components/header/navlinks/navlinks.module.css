@@ -106,9 +106,35 @@
 
 .sub_menu ul {
    padding: 0px 10px 0px 10px;
+   list-style: none;
 }
 
 .sub_menu li {
    text-decoration: none;
    padding: .5rem 0rem;
+}
+
+
+.mega_menu {
+   height: auto;
+   padding: 2rem 0rem;
+   background: white;
+   display: flex
+}
+
+.mega_menu_right_section {
+   width: 40%;
+   padding-left: 8rem;
+}
+
+.mega_menu_left_section {
+   width: 60%;
+}
+
+.mega_menu_nav_links ul {
+   list-style: none;
+}
+
+.mega_menu_nav_links ul li {
+   padding: .7rem 0rem;
 }

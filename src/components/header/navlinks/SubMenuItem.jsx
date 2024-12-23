@@ -15,7 +15,7 @@ const SubMenuItem = ({ subMenu, titleName }) => {
                   <li key={item.name}>{item.name}</li>
                ))}
             </ul>
-            <span style={{ fontStyle: 'italic', fontSize: "12px", paddingLeft: "10px", textDecoration: "underline" }}>All Mealtime</span>
+            <span style={{ fontStyle: 'italic', fontSize: "12px", paddingLeft: "10px", textDecoration: "underline" }}>All {titleName}</span>
          </div>
          <div id='features' className={style.features}>
             <div className={style.feature_mealtime_swiper_container}>

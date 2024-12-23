@@ -28,7 +28,19 @@ export const menu=[
       subMenu:[
          {
             name: "Play Time 1",
-         }
+         },
+         {
+            name: "Play Time 2",
+         },
+         {
+            name: "Play Time 3",
+         },
+         {
+            name: "Play Time 4",
+         },
+         {
+            name: "Play Time 5",
+         },
       ]
    },
    {
@@ -37,8 +49,20 @@ export const menu=[
       breadcrum: "Shop Bathtime",
       subMenu:[
          {
-            name: "Play Time 1",
-         }
+            name: "Bath Time 1",
+         },
+         {
+            name: "Bath Time 2",
+         },
+         {
+            name: "Bath Time 3",
+         },
+         {
+            name: "Bath Time 4",
+         },
+         {
+            name: "Bath Time 5",
+         },
       ]
    },
    {
@@ -48,7 +72,7 @@ export const menu=[
       breadcrum: "Shop The Play Boxes",
       subMenu:[
          {
-            name: "Play Time 1",
+            name: "The Play Boxes 1",
          }
       ]
    },

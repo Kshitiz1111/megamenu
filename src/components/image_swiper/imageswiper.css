@@ -4,7 +4,7 @@
 }
 
 .swiper-wrapper {
-   height: 180px;
+   height: 250px;
    padding: 5px 0px 15px 0px;
    margin-left: 10px;
 }
@@ -54,4 +54,14 @@
 
 .swiper-slide:nth-child(3n) {
    width: 40%;
+}
+
+
+
+@media (max-width: 768px) {
+   .swiper-wrapper {
+      height: 180px;
+      padding: 5px 0px 10px 0px;
+      margin-left: 5px;
+   }
 }

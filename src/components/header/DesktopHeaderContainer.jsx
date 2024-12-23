@@ -2,6 +2,7 @@ import React from 'react'
 import BrandIcon from './BrandIcon'
 import MainMenuItem from './navlinks/MainMenuItem'
 import SubMenuItem from './navlinks/SubMenuItem'
+import MegaMenu from './navlinks/MegaMenu'
 
 const DesktopHeaderContainer = ({ isMobile }) => {
    return (
@@ -14,6 +15,7 @@ const DesktopHeaderContainer = ({ isMobile }) => {
             <p style={{ fontSize: "2rem" }}>LOGO</p>
             <MainMenuItem isMobile={isMobile} setSelectedMenu={() => { }} />
          </div>
+         <MegaMenu />
       </div>
    )
 }

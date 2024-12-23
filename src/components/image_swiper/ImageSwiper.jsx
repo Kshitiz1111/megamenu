@@ -9,19 +9,28 @@ import './imageswiper.css'
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-export default function ImageSwiper({ items, initialCount = 2.5 }) {
+export default function ImageSwiper({ items, initialCount = 2.5, onNext, onPrev, onUpdate }) {
+   const swiperRef = useRef(null);
    return (
       <>
          <Swiper
             slidesPerView={initialCount}
             spaceBetween={10}
-            draggable={true}
+            onSwiper={(swiper) => {
+               swiperRef.current = swiper;
+               if (onNext) onNext(() => swiper.slideNext());
+               if (onPrev) onPrev(() => swiper.slidePrev());
+               if (onUpdate) onUpdate(swiper);
+            }}
+            onSlideChange={(swiper) => {
+               if (onUpdate) onUpdate(swiper);
+            }}
             modules={[Pagination]}
             className='mySwiper'
          >
             {items.map((item) => (
                <SwiperSlide key={item.id}>
-                  <div style={{ display: "block" }}>
+                  <div key={item.id} style={{ display: "block", }}>
                      <div className=''>
                         <img src={item.imgUrl} alt="" />
                      </div>
