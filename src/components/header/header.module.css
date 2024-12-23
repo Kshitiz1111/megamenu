@@ -1,0 +1,49 @@
+.header {
+   padding: 10px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 40px;
+}
+
+
+.toggel_menu_item_default {
+   cursor: pointer;
+   background: transparent;
+}
+
+.toggel_menu_item_default span {
+   padding: .5px 10px;
+   border-radius: 50px;
+   background: #000;
+   display: block;
+   margin: 6px 0px -1px 0px;
+   transition: transform 0.3s ease;
+}
+
+.active span:nth-child(1) {
+   transform: rotate(45deg) translate(4px, 4.5px);
+}
+
+.active span:nth-child(2) {
+   opacity: 0;
+}
+
+.active span:nth-child(3) {
+   transform: rotate(-45deg) translate(4px, -4.5px);
+}
+
+.nav_item_container_default {
+   display: none;
+}
+
+.nav_item_container_active {
+   display: block;
+   background-color: white;
+   position: absolute;
+   top: 40px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
