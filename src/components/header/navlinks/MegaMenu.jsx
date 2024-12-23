@@ -10,8 +10,6 @@ const MegaMenu = ({ subMenu = [], titleName = "MealTime" }) => {
    const [isBeginning, setIsBeginning] = useState(true);
    const [isEnd, setIsEnd] = useState(false);
 
-   subMenu = menu[0].subMenu;
-
    const handleNextClick = () => {
       if (swiperNextRef.current) swiperNextRef.current();
    };
@@ -27,7 +25,7 @@ const MegaMenu = ({ subMenu = [], titleName = "MealTime" }) => {
    return (
       <div className={style.mega_menu}>
          <div className={style.mega_menu_right_section}>
-            <p style={{ fontSize: "20px", fontWeight: 600, marginBottom: "10px" }}>Shop{titleName}</p>
+            <p style={{ fontSize: "20px", fontWeight: 600, marginBottom: "10px" }}>Shop {titleName}</p>
             <div className={style.mega_menu_nav_links}>
                <ul>
                   {subMenu.map((item, index) => (

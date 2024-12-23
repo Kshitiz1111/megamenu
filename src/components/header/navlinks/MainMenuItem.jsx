@@ -20,7 +20,18 @@ const MainMenuItem = ({ setSelectedMenu, isMobile = true }) => {
          <div style={{ position: "relative" }}>
             <ul>
                {menu.map((item) => (
-                  <li key={item.id} onClick={() => setSelectedMenu(item)}>
+                  <li key={item.id}
+                     onClick={() => {
+                        if (item.subMenu) {
+                           setSelectedMenu(item)
+                        }
+                     }}
+                     onMouseEnter={() => {
+                        if (item.subMenu) {
+                           setSelectedMenu(item)
+                        }
+                     }}
+                  >
                      <div style={{ display: "flex", position: 'relative' }}>
                         <p>{item.name}</p>
                         {!isMobile && item?.new &&
