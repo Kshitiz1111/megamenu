@@ -108,3 +108,11 @@ export const featuredMealTime = [
    },
  
 ]
+export const subs = [
+   {id:1,imgUrl:'/images/chair.png', 
+   details:{category:"best seller",name: "The Chair", price: '$20/month'}
+   },
+   {id:1,imgUrl:'/images/chair.png', 
+   details:{category:"best seller",name: "The Chair", price: '$20/month'}
+   },
+]

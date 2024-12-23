@@ -119,7 +119,8 @@
    height: auto;
    padding: 2rem 0rem;
    background: white;
-   display: flex
+   display: flex;
+   border-top: 1px solid black;
 }
 
 .mega_menu_right_section {
@@ -137,4 +138,140 @@
 
 .mega_menu_nav_links ul li {
    padding: .7rem 0rem;
+}
+
+.mega_menu_nav_links ul li:hover {
+   color: #3057a7;
+   cursor: pointer;
+}
+
+
+.ageSelector {
+   font-family: system-ui, -apple-system, sans-serif;
+   max-width: 400px;
+}
+
+.tabs {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 30px;
+}
+
+.tab {
+   cursor: pointer;
+   color: #666;
+   position: relative;
+}
+
+.active {
+   color: #000;
+}
+
+.active::after {
+   content: '';
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: #0066ff;
+   border-radius: 50px;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, 0fr);
+   gap: 10px;
+}
+
+.ageItem {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   text-align: center;
+   width: 90px;
+}
+
+.icon {
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 0.3s ease;
+   border: 1px solid gray;
+   border-radius: 50%;
+   padding: 2px;
+}
+
+.icon:hover {
+   transform: rotate(15deg);
+   border-color: #3057a7;
+   cursor: pointer;
+}
+
+.ageText {
+   font-size: 14px;
+   color: #666;
+}
+
+.ageText:hover {
+   color: #3057a7;
+   cursor: pointer;
+}
+
+/* Icons */
+.iconCircle {
+   background: #FFD700;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+}
+
+.iconDouble {
+   background: #808000;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   position: relative;
+}
+
+.iconDouble::after {
+   content: '';
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   width: 20px;
+   height: 20px;
+   background: #808000;
+   border-radius: 50%;
+   opacity: 0.7;
+}
+
+.iconSquare {
+   background: #98D8D8;
+   width: 30px;
+   height: 30px;
+}
+
+.iconFlower {
+   background: #DDA0DD;
+   width: 30px;
+   height: 30px;
+   clip-path: path('M15 0C18 10 25 15 30 15C25 18 20 25 15 30C12 25 5 20 0 15C5 12 10 5 15 0Z');
+}
+
+.iconSegments {
+   background: #FF4500;
+   width: 30px;
+   height: 30px;
+   clip-path: path('M0 15 L10 0 L20 0 L30 15 L20 30 L10 30Z');
+}
+
+.iconBox {
+   background: #B0C4DE;
+   width: 30px;
+   height: 30px;
+   border-radius: 4px;
 }

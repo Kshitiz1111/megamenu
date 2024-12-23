@@ -22,15 +22,6 @@ const SubMenuItem = ({ subMenu, titleName }) => {
                <div className={style.slider_header}>
                   <p>Featured {titleName}</p>
                   <Link href="#">Shop all</Link>
-
-                  {/* {!isMobile &&
-                     <>
-                        <p style={{ fontWeight: 600 }}>Featured {titleName}</p>
-                        <div className={style.swiper_nav}>
-
-                        </div>
-                     </>
-                  } */}
                </div>
                <ImageSwiper items={featuredMealTime} />
             </div>

@@ -29,8 +29,8 @@ export default function ImageSwiper({ items, initialCount = 2.5, onNext, onPrev,
             className='mySwiper'
          >
             {items.map((item) => (
-               <SwiperSlide key={item.id}>
-                  <div key={item.id} style={{ display: "block", }}>
+               <SwiperSlide key={item.id} >
+                  <div key={item.id} style={{ display: "block" }}>
                      <div className=''>
                         <img src={item.imgUrl} alt="" />
                      </div>
