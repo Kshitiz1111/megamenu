@@ -138,11 +138,34 @@
 
 .mega_menu_nav_links ul li {
    padding: .7rem 0rem;
+   display: flex;
+   align-items: center;
 }
 
 .mega_menu_nav_links ul li:hover {
    color: #3057a7;
    cursor: pointer;
+}
+
+.mega_menu_nav_links ul li:hover svg {
+   transition-duration: 1s;
+}
+
+.mega_menu_nav_links ul li:hover svg:nth-child(1) {
+   transform: translate(5px, -5px);
+}
+
+.mega_menu_nav_links ul li:hover svg:nth-child(2) {
+   transform: translate(-5px, -5px);
+}
+
+.mega_menu_nav_links ul li:hover svg:nth-child(3) {
+   transform: translate(0px, 5px);
+}
+
+.mega_menu_nav_links ul li:hover svg:nth-child(4) {
+   transform: translate(0px, 5px);
+
 }
 
 
@@ -274,4 +297,43 @@
    width: 30px;
    height: 30px;
    border-radius: 4px;
+}
+
+.hover_element_div {
+   width: 12px;
+   height: 18px;
+   position: relative;
+   margin-left: 4px;
+}
+
+.hover_element_div svg {
+   transition-duration: 1s;
+}
+
+.hover_element_div svg:nth-child(1) {
+   width: 5px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.hover_element_div svg:nth-child(2) {
+   width: 5px;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.hover_element_div svg:nth-child(3) {
+   width: 5px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.hover_element_div svg:nth-child(4) {
+   width: 5px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }

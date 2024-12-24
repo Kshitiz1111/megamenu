@@ -72,8 +72,17 @@ export const menu=[
       breadcrum: "Shop The Play Boxes",
       subMenu:[
          {
-            name: "The Play Boxes 1",
-         }
+            name: "Play Box Subscription",
+         },
+         {
+            name: "Newborn Box",
+         },
+         {
+            name: "Gift Play Boxes",
+         },
+         {
+            name: "Redeem Gift",
+         },
       ]
    },
    {

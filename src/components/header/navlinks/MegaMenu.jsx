@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useRef, useState } from 'react'
 import style from './navlinks.module.css'
 import AgeSelector from './AgeSelector';
+import HoverElement from './HoverElement';
 
 const MegaMenu = ({ subMenu = [], titleName = "MealTime" }) => {
    const swiperNextRef = useRef(null);
@@ -30,7 +31,9 @@ const MegaMenu = ({ subMenu = [], titleName = "MealTime" }) => {
             <div className={style.mega_menu_nav_links}>
                <ul>
                   {subMenu.map((item, index) => (
-                     <li key={index}>{item.name}</li>
+                     <li key={index}>{item.name}
+                        {item.name == 'Play Box Subscription' && <HoverElement />}
+                     </li>
                   ))}
                </ul>
                <span style={{ fontStyle: 'italic', fontSize: "12px", textDecoration: "underline" }}>All {titleName}</span>
